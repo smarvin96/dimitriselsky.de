@@ -1,5 +1,7 @@
 import Image from "next/image";
 import data from "../data.json";
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 const LinkCard = ({
   href,
@@ -47,6 +49,17 @@ export default function Home() {
       {data.links.map((link) => (
         <LinkCard key={link.href} {...link} />
       ))}
+      <div className="flex justify-center items-center">
+        {data.socials.map((link, index) => {
+          if (link.title.includes("Youtube")){
+            return <YouTubeIcon key={index} fontSize="large" />
+          }
+          if (link.title.includes("Instagram")) {
+            return <InstagramIcon key={index} fontSize="large" />
+          }
+          return null;
+        })}
+      </div>
     </div>
   );
 }

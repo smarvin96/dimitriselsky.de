@@ -24,7 +24,7 @@ const LinkCard = ({ href, title, image, maxWidth }: LinkCardProps) => {
               alt={title}
               src={image}
               width={100}
-              height={1000}
+              height={100}
             />
           )}
         </div>
@@ -40,7 +40,7 @@ export default function Home() {
   return (
     <div className="flex items-center flex-col mx-auto w-full justify-center mt-16 px-4 md:px-8">
       <Image
-        className="rounded-full"
+        className="rounded-full hover:scale-105 transition-all"
         alt={data.name}
         src={data.avatar}
         width={120}
@@ -54,7 +54,7 @@ export default function Home() {
         <LinkCard key={link.href} {...link} maxWidth={100} />
       ))}
 
-      <div className="gap-4 flex justify-center items-center mt-8">
+      <div className="gap-4 flex justify-center items-center mt-8 hover: ">
         {data.socials.map((link, index) => {
           if (link.title.includes("Youtube")) {
             return (

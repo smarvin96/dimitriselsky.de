@@ -15,7 +15,7 @@ const LinkCard = ({
   return (
     <a
       href={href}
-      className="flex items-center p-1 w-full rounded-md  hover:scale-105 transition-all bg-gray-100 mb-3"
+      className="flex items-center p-1 w-9/12 rounded-md  hover:scale-105 transition-all bg-gray-100 mb-3"
     >
       <div className="flex text-center w-full">
         <div className="w-10 h-10">

@@ -13,19 +13,19 @@ const LinkCard = ({
   return (
     <a
       href={href}
-      className="flex items-center p-1 w-full rounded-md  hover:scale-105 transition-all border border-gray-300 mb-3"
+      className="flex items-center p-1 w-full rounded-md  hover:scale-105 transition-all bg-gray-100 mb-3"
     >
       <div className="flex text-center w-full">
-       { image && (
-         <Image
-         className="rounded-sm"
-         alt={title}
-         src={image}
-         width={40}
-         height={40}
-       />
-       )}
-        <h2 className="font-semibold w-full tex-center">{title}</h2>
+        {image && (
+          <Image
+            className="rounded-sm"
+            alt={title}
+            src={image}
+            width={40}
+            height={40}
+          />
+        )}
+        <h2 className="font-semibold w-full tex-center ">{title}</h2>
       </div>
     </a>
   );
@@ -41,7 +41,7 @@ export default function Home() {
         width={96}
         height={96}
       />
-      <h1 className="font-bold mt-4 text-xl mb-8">{data.name}</h1>
+      <h1 className="font-bold mt-4 text-xl mb-8 text-white">{data.name}</h1>
       {data.links.map((link) => (
         <LinkCard key={link.href} {...link} />
       ))}

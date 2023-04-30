@@ -60,16 +60,20 @@ export default function Home() {
         {data.socials.map((link, index) => {
           if (link.title.includes("Youtube")) {
             return (
+              <div key={index} className="hover:scale-150 transition-all">
               <a key={index} href={link.href}>
                 <YouTubeIcon fontSize="large" />
               </a>
+              </div>
             );
           }
           if (link.title.includes("Instagram")) {
             return (
+              <div key={index} className="hover:scale-150 transition-all">
               <a key={index} href={link.href}>
                 <InstagramIcon fontSize="large" />
               </a>
+              </div>
             );
           }
           return null;

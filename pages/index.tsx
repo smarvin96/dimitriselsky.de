@@ -16,13 +16,13 @@ const LinkCard = ({ href, title, image }: LinkCardProps) => {
   return (
     <a
       href={href}
-      className="flex items-center p-1 w-full md:w-9/12 rounded-md hover:scale-105 transition-all bg-gray-100 mb-3"
+      className="rounded-md flex items-center p-1 w-full md:w-9/12 rounded-md hover:scale-105 transition-all bg-gray-100 mb-3"
     >
       <div className="flex text-center w-full">
         <div className="">
           {image && (
             <Image
-              className="rounded-md object-cover"
+              className="rounded-sm object-cover"
               style={{ width: "5rem", height: "5rem" }}
               alt={title}
               src={image}

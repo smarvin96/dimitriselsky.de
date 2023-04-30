@@ -43,7 +43,7 @@ export default function Home() {
   return (
     <div className="flex items-center flex-col mx-auto w-full justify-center mt-16 px-4 md:px-8 ">
       <Image
-        className="rounded-full hover:scale-110 transition-all"
+        className="shadow-xl rounded-full hover:scale-110 transition-all"
         alt={data.name}
         src={data.avatar}
         width={150}

@@ -60,18 +60,18 @@ export default function Home() {
         {data.socials.map((link, index) => {
           if (link.title.includes("Youtube")) {
             return (
-              <div key={index} className="hover:scale-150 transition-all">
+              <div key={index} className="hover:scale-125 transition-all">
               <a key={index} href={link.href}>
-                <YouTubeIcon fontSize="large" />
+                <YouTubeIcon fontSize="large" style={{fontSize: 60}} />
               </a>
               </div>
             );
           }
           if (link.title.includes("Instagram")) {
             return (
-              <div key={index} className="hover:scale-150 transition-all">
+              <div key={index} className="hover:scale-125 transition-all">
               <a key={index} href={link.href}>
-                <InstagramIcon fontSize="large" />
+                <InstagramIcon fontSize="large" style={{fontSize: 60}} />
               </a>
               </div>
             );

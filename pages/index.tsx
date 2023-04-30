@@ -56,7 +56,7 @@ export default function Home() {
         <LinkCard key={link.href} {...link} maxWidth={100} />
       ))}
 
-      <div className="gap-4 flex justify-center items-center mt-8 hover: ">
+      <div className="gap-4 flex justify-center items-center mt-6 ">
         {data.socials.map((link, index) => {
           if (link.title.includes("Youtube")) {
             return (

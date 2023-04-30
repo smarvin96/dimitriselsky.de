@@ -5,7 +5,7 @@
         {
             "title": "PODCAST EPISODE #1 CLAUDIA LÖWEN YOUTUBE",
             "href": "https://www.youtube.com/watch?v=ebk_-rFXeKI&ab_channel=DimitriSelsky",
-            "image":"https://cdn.lnk.bi/profilepics/-1456063_20220929872.jpg"
+            "image":"/images/podcast.png"
         },
         {
             "title": "STAND UP COMEDY OPEN MIC GRATIS SITZPLATZ RESERVIEREN",
@@ -15,7 +15,7 @@
         {
             "title": "PODCAST EPISODE #1 CLAUDIA LÖWEN SPOTIFY",
             "href": "https://open.spotify.com/show/632n1DLB6KJGl5FnQJHema",
-            "image":"https://cdn.lnk.bi/profilepics/-1456063_20220929872.jpg"
+            "image":"/images/podcast.png"
         }
     ],
     "socials": [

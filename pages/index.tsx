@@ -12,7 +12,7 @@ interface LinkCardProps {
   maxWidth?: number;
 }
 
-const LinkCard = ({ href, title, image, maxWidth }: LinkCardProps) => {
+const LinkCard = ({ href, title, image }: LinkCardProps) => {
   return (
     <a
       href={href}
@@ -22,11 +22,12 @@ const LinkCard = ({ href, title, image, maxWidth }: LinkCardProps) => {
         <div className="">
           {image && (
             <Image
-              className="rounded-md"
+              className="rounded-md object-cover"
+              style={{ width: "5rem", height: "5rem" }}
               alt={title}
               src={image}
-              width={69}
               height={69}
+              width={100}
             />
           )}
         </div>
@@ -80,7 +81,7 @@ export default function Home() {
             return (
               <div key={index} className="hover:scale-125 transition-all">
                 <a key={index} href={link.href}>
-                <TikTokIcon/>
+                  <TikTokIcon />
                 </a>
               </div>
             );
@@ -89,10 +90,10 @@ export default function Home() {
             return (
               <div key={index} className="hover:scale-125 transition-all">
                 <a key={index} href={link.href}>
-                <SpotifyIcon/>
+                  <SpotifyIcon />
                 </a>
               </div>
-            )
+            );
           }
           return null;
         })}

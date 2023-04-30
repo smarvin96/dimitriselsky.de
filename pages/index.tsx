@@ -17,14 +17,14 @@ const LinkCard = ({ href, title, image, maxWidth }: LinkCardProps) => {
       className="flex items-center p-1 w-full md:w-9/12 rounded-md hover:scale-105 transition-all bg-gray-100 mb-3"
     >
       <div className="flex text-center w-full">
-        <div className="w-10 h-10 overflow-hidden">
+        <div className="">
           {image && (
             <Image
               className="rounded-md"
               alt={title}
               src={image}
-              width={100}
-              height={100}
+              width={69}
+              height={69}
             />
           )}
         </div>
@@ -36,9 +36,11 @@ const LinkCard = ({ href, title, image, maxWidth }: LinkCardProps) => {
   );
 };
 
+
+
 export default function Home() {
   return (
-    <div className="flex items-center flex-col mx-auto w-full justify-center mt-16 px-4 md:px-8">
+    <div className="flex items-center flex-col mx-auto w-full justify-center mt-16 px-4 md:px-8 ">
       <Image
         className="rounded-full hover:scale-105 transition-all"
         alt={data.name}

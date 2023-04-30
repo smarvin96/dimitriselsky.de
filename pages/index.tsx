@@ -3,6 +3,7 @@ import data from "../data.json";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TikTokIcon from "../components/TikTokIcon";
+import SpotifyIcon from "../components/SpotifyIcon";
 
 interface LinkCardProps {
   href: string;
@@ -83,6 +84,15 @@ export default function Home() {
                 </a>
               </div>
             );
+          }
+          if (link.title.includes("Spotify")) {
+            return (
+              <div key={index} className="hover:scale-125 transition-all">
+                <a key={index} href={link.href}>
+                <SpotifyIcon/>
+                </a>
+              </div>
+            )
           }
           return null;
         })}

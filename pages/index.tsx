@@ -2,6 +2,7 @@ import Image from "next/image";
 import data from "../data.json";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import TikTokIcon from "../components/TikTokIcon";
 
 interface LinkCardProps {
   href: string;
@@ -36,8 +37,6 @@ const LinkCard = ({ href, title, image, maxWidth }: LinkCardProps) => {
   );
 };
 
-
-
 export default function Home() {
   return (
     <div className="flex items-center flex-col mx-auto w-full justify-center mt-16 px-4 md:px-8 ">
@@ -61,18 +60,27 @@ export default function Home() {
           if (link.title.includes("Youtube")) {
             return (
               <div key={index} className="hover:scale-125 transition-all">
-              <a key={index} href={link.href}>
-                <YouTubeIcon fontSize="large" style={{fontSize: 60}} />
-              </a>
+                <a key={index} href={link.href}>
+                  <YouTubeIcon fontSize="large" style={{ fontSize: 60 }} />
+                </a>
               </div>
             );
           }
           if (link.title.includes("Instagram")) {
             return (
               <div key={index} className="hover:scale-125 transition-all">
-              <a key={index} href={link.href}>
-                <InstagramIcon fontSize="large" style={{fontSize: 60}} />
-              </a>
+                <a key={index} href={link.href}>
+                  <InstagramIcon fontSize="large" style={{ fontSize: 60 }} />
+                </a>
+              </div>
+            );
+          }
+          if (link.title.includes("Tiktok")) {
+            return (
+              <div key={index} className="hover:scale-125 transition-all">
+                <a key={index} href={link.href}>
+                <TikTokIcon/>
+                </a>
               </div>
             );
           }

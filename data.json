@@ -1,11 +1,11 @@
 {
     "name": "Dimitri Selsky",
-    "avatar": "https://cdn.lnk.bi/profilepics/-1456063_20220929872.jpg",
+    "avatar": "/images/dimitri_selsky.jpg",
     "links": [
         {
             "title": "PODCAST EPISODE #1 CLAUDIA LÖWEN YOUTUBE",
             "href": "https://www.youtube.com/watch?v=ebk_-rFXeKI&ab_channel=DimitriSelsky",
-            "image":"/images/standup.jpg"
+            "image":"https://cdn.lnk.bi/profilepics/-1456063_20220929872.jpg"
         },
         {
             "title": "STAND UP COMEDY OPEN MIC GRATIS SITZPLATZ RESERVIEREN",

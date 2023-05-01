@@ -22,8 +22,8 @@ const LinkCard = ({ href, title, image }: LinkCardProps) => {
         <div className="">
           {image && (
             <Image
-              className="rounded-sm object-cover"
-              style={{ width: "5rem", height: "5rem" }}
+              className="rounded-md"
+              style={{ width: "100%", height: "100%" }}
               alt={title}
               src={image}
               height={69}

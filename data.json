@@ -3,14 +3,19 @@
     "avatar": "/images/dimitri_selsky.jpg",
     "links": [
         {
-            "title": "PODCAST EPISODE #1 CLAUDIA LÖWEN YOUTUBE",
+            "title": "EINTRITT FREI - CHRYSIPPUS COMEDY",
             "href": "https://www.youtube.com/watch?v=ebk_-rFXeKI&ab_channel=DimitriSelsky",
-            "image":"/images/podcast.jpg"
+            "image":"/images/comedy.jpg"
         },
         {
             "title": "STAND UP COMEDY OPEN MIC GRATIS SITZPLATZ RESERVIEREN",
             "href": "https://www.eventbrite.de/e/chrysippus-standup-comedy-open-mic-tickets-602686219707",
             "image":"/images/open_mic.jpg"
+        },
+        {
+            "title": "PODCAST EPISODE #1 CLAUDIA LÖWEN YOUTUBE",
+            "href": "https://www.youtube.com/watch?v=ebk_-rFXeKI&ab_channel=DimitriSelsky",
+            "image":"/images/podcast.jpg"
         },
         {
             "title": "PODCAST EPISODE #1 CLAUDIA LÖWEN SPOTIFY",

@@ -12,6 +12,34 @@ interface LinkCardProps {
   maxWidth?: number;
 }
 
+// const LinkCard = ({ href, title, image }: LinkCardProps) => {
+//   return (
+//     <a
+//       href={href}
+//       className="rounded-md flex items-center p-1 w-full lg:w-6/12 md:w-9/12 rounded-md hover:scale-105 transition-all bg-gray-200 mb-3"
+//     >
+//       <div className="flex text-center w-full overflow-hidden">
+//         <div className="">
+//           {image && (
+//             <Image
+//               className="rounded-md"
+//               layout="fixed"
+//               objectFit="cover"
+//               alt={title}
+//               src={image}
+//               height={100}
+//               width={180}
+//             />
+//           )}
+//         </div>
+//         <h2 className="flex justify-center items-center font-semibold w-full text-gray-700 m-1">
+//           {title}
+//         </h2>
+//       </div>
+//     </a>
+//   );
+// };
+
 const LinkCard = ({ href, title, image }: LinkCardProps) => {
   return (
     <a
@@ -38,6 +66,7 @@ const LinkCard = ({ href, title, image }: LinkCardProps) => {
     </a>
   );
 };
+
 
 export default function Home() {
   return (
